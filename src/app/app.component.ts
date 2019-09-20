@@ -1,9 +1,6 @@
 import { Component } from "@angular/core";
 
-interface Route {
-  link: string;
-  label: string;
-}
+import { Route } from "./interfaces/route";
 
 @Component({
   selector: "app-root",
