@@ -16,10 +16,10 @@ describe("AppComponent", () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'test-service'`, () => {
+  it(`should have as title 'Test Service'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.debugElement.componentInstance;
-    expect(app.title).toEqual("test-service");
+    expect(app.title).toEqual("Test Service");
   });
 
   it("should render title", () => {
@@ -27,7 +27,7 @@ describe("AppComponent", () => {
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
     expect(compiled.querySelector(".content span").textContent).toContain(
-      "test-service app is running!"
+      "Test Service app is running!"
     );
   });
 });
