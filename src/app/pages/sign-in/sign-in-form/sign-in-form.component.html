@@ -1,0 +1,19 @@
+<form (submit)="submitForm()">
+  <app-input
+    [(ngModel)]="username"
+    [value]="username"
+    placeholder="Username"
+    name="username"
+    type="text"
+  ></app-input>
+
+  <app-input
+    [(ngModel)]="password"
+    [value]="password"
+    placeholder="Password"
+    name="password"
+    type="password"
+  ></app-input>
+
+  <button mat-raised-button>Sign In</button>
+</form>

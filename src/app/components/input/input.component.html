@@ -1,1 +1,22 @@
-<p>input works!</p>
+<mat-form-field>
+  <input
+    matInput
+    [type]="type"
+    (input)="onChange($event.target.value)"
+    (blur)="onTouched()"
+    [disabled]="disabled"
+    [value]="value"
+    [placeholder]="placeholder"
+  />
+  <button
+    type="button"
+    mat-button
+    *ngIf="value"
+    matSuffix
+    mat-icon-button
+    aria-label="Clear"
+    (click)="value = ''"
+  >
+    <mat-icon>close</mat-icon>
+  </button>
+</mat-form-field>
