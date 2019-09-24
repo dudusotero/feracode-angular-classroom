@@ -1,12 +1,17 @@
-import { Component, OnInit } from "@angular/core";
+import { Component } from "@angular/core";
+import { Employee } from "src/app/interfaces/employee";
 
 @Component({
   selector: "app-dashboard",
   templateUrl: "./dashboard.component.html",
   styleUrls: ["./dashboard.component.scss"]
 })
-export class DashboardComponent implements OnInit {
+export class DashboardComponent {
+  public selectedEmployee: Employee;
+
   constructor() {}
 
-  ngOnInit() {}
+  setSelectedEmployee(employee: Employee) {
+    this.selectedEmployee = employee;
+  }
 }

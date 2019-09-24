@@ -1,0 +1,8 @@
+<div class="">
+  <h1>Employee list</h1>
+  <ul>
+    <li *ngFor="let employee of employees" (click)="selectEmployee(employee)">
+      {{ employee.name }}
+    </li>
+  </ul>
+</div>

@@ -1,0 +1,99 @@
+{
+  "employees": [
+    {
+      "id": 1,
+      "name": "Denimar",
+      "role": "BACKEND"
+    },
+    {
+      "id": 2,
+      "name": "Guilherme",
+      "role": "BACKEND"
+    },
+    {
+      "id": 3,
+      "name": "Mike",
+      "role": "BACKEND"
+    },
+    {
+      "id": 4,
+      "name": "Ricardo",
+      "role": "BACKEND"
+    },
+    {
+      "id": 5,
+      "name": "Thadeu",
+      "role": "BACKEND"
+    },
+    {
+      "id": 6,
+      "name": "Matheus",
+      "role": "ADMIN"
+    },
+    {
+      "id": 7,
+      "name": "Junior",
+      "role": "ADMIN"
+    },
+    {
+      "id": 8,
+      "name": "Larissa",
+      "role": "DESIGN"
+    },
+    {
+      "id": 9,
+      "name": "Alexandre",
+      "role": "FRONTEND"
+    },
+    {
+      "id": 10,
+      "name": "Eduardo",
+      "role": "FRONTEND"
+    },
+    {
+      "id": 11,
+      "name": "Leonardo",
+      "role": "FRONTEND"
+    },
+    {
+      "id": 12,
+      "name": "Vinicius",
+      "role": "FRONTEND"
+    },
+    {
+      "id": 13,
+      "name": "Welligton",
+      "role": "FRONTEND"
+    },
+    {
+      "id": 14,
+      "name": "Rafael",
+      "role": "FRONTEND"
+    },
+    {
+      "id": 15,
+      "name": "Valério",
+      "role": "FRONTEND"
+    },
+    {
+      "id": 16,
+      "name": "Lucas",
+      "role": "DESING"
+    },
+    {
+      "id": 17,
+      "name": "Hely",
+      "role": "ADMIN"
+    },
+    {
+      "id": 18,
+      "name": "Thiago",
+      "role": "QA"
+    },
+    {
+      "id": 19,
+      "name": "Wlad",
+      "role": "ADMIN"
+    }
+  ]
+}
