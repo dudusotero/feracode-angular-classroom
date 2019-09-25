@@ -21,19 +21,19 @@ import { EmployeesService } from "src/app/services/employees.service";
     ]),
     trigger("selectedDeselected", [
       state(
-        "open",
+        "selected",
         style({
           paddingLeft: 16
         })
       ),
       state(
-        "closed",
+        "deselected",
         style({
           paddingLeft: 0
         })
       ),
-      transition("open => closed", [animate("0.2s")]),
-      transition("closed => open", [animate("0.2s")])
+      transition("selected => deselected", [animate("0.2s")]),
+      transition("deselected => selected", [animate("0.6s")])
     ])
   ]
 })
