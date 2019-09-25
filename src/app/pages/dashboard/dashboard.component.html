@@ -1,9 +1,9 @@
 <div class="default-template">
+  <app-employees-list
+    (selectedEmployee)="setSelectedEmployee($event)"
+  ></app-employees-list>
   <div *ngIf="selectedEmployee">
     <h1>{{ selectedEmployee.name }}</h1>
     <h2>{{ selectedEmployee.role }}</h2>
   </div>
-  <app-employees-list
-    (selectedEmployee)="setSelectedEmployee($event)"
-  ></app-employees-list>
 </div>

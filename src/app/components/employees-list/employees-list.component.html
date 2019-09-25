@@ -1,7 +1,13 @@
-<div class="">
+<div class="container">
   <h1>Employee list</h1>
-  <ul>
-    <li *ngFor="let employee of employees" (click)="selectEmployee(employee)">
+  <mat-spinner *ngIf="loadingEmployees"></mat-spinner>
+  <ul [@appear]="!loadingEmployees ? 'show' : 'hide'">
+    <li
+      *ngFor="let employee of employees"
+      (click)="selectEmployee(employee)"
+      [ngClass]="{ selected: selected === employee }"
+      [@selectedDeselected]="selected === employee ? 'selected' : 'deselected'"
+    >
       {{ employee.name }}
     </li>
   </ul>
