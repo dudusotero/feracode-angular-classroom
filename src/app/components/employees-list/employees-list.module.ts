@@ -3,6 +3,8 @@ import { CommonModule } from "@angular/common";
 import { HttpClientModule } from "@angular/common/http";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { MatProgressSpinnerModule } from "@angular/material/progress-spinner";
+import { MatButtonModule } from "@angular/material/button";
+import { MatIconModule } from "@angular/material/icon";
 import { EmployeesListComponent } from "./employees-list.component";
 
 @NgModule({
@@ -11,7 +13,9 @@ import { EmployeesListComponent } from "./employees-list.component";
     CommonModule,
     HttpClientModule,
     BrowserAnimationsModule,
-    MatProgressSpinnerModule
+    MatProgressSpinnerModule,
+    MatButtonModule,
+    MatIconModule
   ],
   exports: [EmployeesListComponent]
 })

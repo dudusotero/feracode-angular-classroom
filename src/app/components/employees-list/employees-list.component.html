@@ -1,14 +1,28 @@
 <div class="container">
   <h1>Employee list</h1>
   <mat-spinner *ngIf="loadingEmployees"></mat-spinner>
-  <ul [@appear]="!loadingEmployees ? 'show' : 'hide'">
-    <li
-      *ngFor="let employee of employees"
-      (click)="selectEmployee(employee)"
-      [ngClass]="{ selected: selected === employee }"
-      [@selectedDeselected]="selected === employee ? 'selected' : 'deselected'"
-    >
-      {{ employee.name }}
-    </li>
-  </ul>
+  <div [@appear]="!loadingEmployees ? 'show' : 'hide'">
+    <ul *ngIf="!loadingEmployees">
+      <li
+        *ngFor="let employee of employees"
+        (click)="selectEmployee(employee)"
+        [ngClass]="{ selected: selected === employee }"
+        [@selectedDeselected]="
+          selected === employee ? 'selected' : 'deselected'
+        "
+      >
+        {{ employee.name }}
+      </li>
+    </ul>
+  </div>
+
+  <button
+    *ngIf="!loadingEmployees"
+    mat-icon-button
+    color="primary"
+    aria-label="Refresh employee list"
+    (click)="refreshEmployeesList()"
+  >
+    <mat-icon>refresh</mat-icon>
+  </button>
 </div>

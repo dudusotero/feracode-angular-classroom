@@ -1,5 +1,15 @@
 <div class="default-template">
+  <button
+    *ngIf="!loadingEmployees"
+    mat-icon-button
+    color="primary"
+    aria-label="Refresh employee list"
+    (click)="refreshEmployeesListChild()"
+  >
+    <mat-icon>refresh</mat-icon>
+  </button>
   <app-employees-list
+    #employeesList
     (selectedEmployee)="setSelectedEmployee($event)"
   ></app-employees-list>
   <div *ngIf="selectedEmployee">

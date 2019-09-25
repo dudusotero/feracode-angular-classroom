@@ -70,4 +70,8 @@ export class EmployeesListComponent implements OnInit {
     this.selected = employee;
     this.selectedEmployee.emit(employee);
   }
+
+  refreshEmployeesList(): void {
+    this.getEmployees();
+  }
 }

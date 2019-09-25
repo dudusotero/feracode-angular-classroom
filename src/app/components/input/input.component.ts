@@ -26,7 +26,6 @@ export class InputComponent implements ControlValueAccessor {
   constructor() {}
 
   writeValue(value: string): void {
-    console.log("Value:", value);
     this.value = value ? value : "";
   }
   registerOnChange(fn: any): void {
